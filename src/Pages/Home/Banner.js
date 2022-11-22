@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -27,19 +28,19 @@ const Banner = () => {
                     </p>
 
                     <div className="mt-8 flex flex-wrap gap-4 text-center">
-                        <a
-                            href='/'
+                        <Link
+                            to='/login'
                             className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
                         >
                             লগিন
-                        </a>
+                        </Link>
 
-                        <a
-                            href='/'
+                        <Link
+                            to='/register'
                             className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
                         >
                             রেজিস্ট্রেশন
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
