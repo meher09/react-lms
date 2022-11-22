@@ -1,10 +1,11 @@
 import React from 'react';
-import Footer from '../Shared/Footer';
-import Navigation from '../Shared/Navigation';
+import { useLoaderData } from 'react-router-dom';
 import Banner from './Banner';
 import Milestones from './Milestones';
 
 const Home = () => {
+    const milestons = useLoaderData()
+
     return (
         <>
             <Banner></Banner>

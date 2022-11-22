@@ -4,7 +4,7 @@ const MilestoneCard = () => {
     return (
         <a
             href="/"
-            className="relative block overflow-hidden rounded-lg border border-gray-100 p-8"
+            className="relative block overflow-hidden rounded-lg border border-red-100 p-8"
         >
             <span
                 className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"
@@ -12,7 +12,7 @@ const MilestoneCard = () => {
 
             <div className="justify-between sm:flex">
                 <div>
-                    <h3 className="text-xl font-bold text-gray-900">
+                    <h3 className="text-lg text-gray-900">
                         হ্যালো পাইথন ও সিম্পল টেম্পলেট
                     </h3>
                 </div>
