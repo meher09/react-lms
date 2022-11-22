@@ -14,7 +14,7 @@ const Navigation = () => {
                             <li><Link to="/" >প্রচ্ছদ</Link></li>
                             <li><Link to="/" >রিভিউ</Link></li>
                             <li><Link to="/" >আমাদের কথা</Link></li>
-                            <li><Link to="/" >যোগাযোগ</Link></li>
+                            <li><Link to="/contact" >যোগাযোগ</Link></li>
                         </ul>
                     </div>
                     <Link to="/" className="btn btn-ghost normal-case text-xl">আইটি শিক্ষা</Link>
@@ -24,7 +24,7 @@ const Navigation = () => {
                         <li><Link to="/" >প্রচ্ছদ</Link></li>
                         <li><Link to="/" >রিভিউ</Link></li>
                         <li><Link to="/" >আমাদের কথা</Link></li>
-                        <li><Link to="/" >যোগাযোগ</Link></li>
+                        <li><Link to="/contact">যোগাযোগ</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end">

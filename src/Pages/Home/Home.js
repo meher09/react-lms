@@ -1,15 +1,29 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Banner from './Banner';
-import Milestones from './Milestones';
+import MilestoneCard from './MilestoneCard';
 
 const Home = () => {
-    const milestons = useLoaderData()
-
+    const milestones = useLoaderData()
     return (
         <>
+
             <Banner></Banner>
-            <Milestones></Milestones>
+            <div className='container'>
+                <div className="divider text-3xl font-bold text-center my-10">
+                    যা যা থাকছে আমাদের কোর্সে
+                </div>
+                <div className="grid grid-cols-3 gap-4 mb-6">
+                    {
+                        milestones.map(milestone => <MilestoneCard
+                            key={milestone.id}
+                            milestone={milestone}
+                        >
+                        </MilestoneCard>)
+                    }
+
+                </div>
+            </div>
         </>
     );
 };

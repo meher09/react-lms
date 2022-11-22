@@ -1,9 +1,9 @@
 import React from 'react';
 
-const MilestoneCard = () => {
+const MilestoneCard = ({ milestone }) => {
+    const { title, description, vedios, duration } = milestone
     return (
-        <a
-            href="/"
+        <div
             className="relative block overflow-hidden rounded-lg border border-red-100 p-8"
         >
             <span
@@ -13,7 +13,7 @@ const MilestoneCard = () => {
             <div className="justify-between sm:flex">
                 <div>
                     <h3 className="text-lg text-gray-900">
-                        হ্যালো পাইথন ও সিম্পল টেম্পলেট
+                        {title}
                     </h3>
                 </div>
 
@@ -22,22 +22,22 @@ const MilestoneCard = () => {
 
             <div className="mt-4 sm:pr-8">
                 <p className="text-sm text-gray-500">
-                    এই মাইলস্টোনে আমরা পাইথনের বেসিক নিয়ে জানব ও পাশা পাশি সিম্পল একটি টেমপ্লেট তৈরী করব
+                    {description}
                 </p>
             </div>
 
             <dl className="mt-6 flex justify-between">
                 <div className="flex flex-col">
                     <dt className="text-sm font-medium text-gray-600">মোট ভিডিও</dt>
-                    <dd className="text-xs text-gray-500">৫০ টি</dd>
+                    <dd className="text-xs text-gray-500">{vedios}</dd>
                 </div>
 
                 <div className="ml-3 flex flex-col sm:ml-6">
                     <dt className="text-sm font-medium text-gray-600">মোট সময়কাল</dt>
-                    <dd className="text-xs text-gray-500">৩ ঘন্টা</dd>
+                    <dd className="text-xs text-gray-500">{duration}</dd>
                 </div>
             </dl>
-        </a>
+        </div>
 
     );
 };
